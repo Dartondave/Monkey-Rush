@@ -27,7 +27,13 @@ def send_request():
     except Exception as e:
         print(f"An error occurred: {e}")
 
-# Infinite loop to send the request every 250 seconds
+# Infinite loop to send the request every 180 seconds
 while True:
     send_request()
-    time.sleep(180)  # Wait for 250 seconds before sending the next request
+    
+    # Countdown for 180 seconds
+    sleep_time = 180
+    while sleep_time > 0:
+        print(f"Next request in {sleep_time} seconds", end="\r")
+        time.sleep(1)
+        sleep_time -= 1
