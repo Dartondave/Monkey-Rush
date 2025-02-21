@@ -30,4 +30,4 @@ def send_request():
 # Infinite loop to send the request every 250 seconds
 while True:
     send_request()
-    time.sleep(250)  # Wait for 250 seconds before sending the next request
+    time.sleep(180)  # Wait for 250 seconds before sending the next request
