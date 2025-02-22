@@ -31,8 +31,8 @@ def send_request():
 while True:
     send_request()
     
-    # Countdown for 180 seconds
-    sleep_time = 180
+    # Countdown for 100 seconds
+    sleep_time = 100
     while sleep_time > 0:
         print(f"Next request in {sleep_time} seconds", end="\r")
         time.sleep(1)
